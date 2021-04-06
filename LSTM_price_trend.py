@@ -15,7 +15,7 @@ from keras import Sequential
 from keras.layers import LSTM, Dense, Dropout, Activation
 from pandas import read_csv
 
-
+google_trend_data = pd.read_csv('google_trend_bitcoin.csv')
 #Load Bitcoin price from yahoo finance
 end = datetime.today()
 start = datetime(end.year-5,end.month,end.day)
